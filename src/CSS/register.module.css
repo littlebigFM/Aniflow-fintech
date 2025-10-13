@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f5fe;
+}
+
+.main {
+  padding: 2rem;
+  /* background-color: #f4f5fe; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.mn {
+  display: flex;
+  gap: 2rem;
+  /* background-color: palegoldenrod; */
+  height: 100%;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  height: 787px;
+  /* background-color: red; */
+}
+
+.leftsecOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40%;
+}
+
+#leftOneText {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.leftsecTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+}
+
+#leftTwoText {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ============ right section ============ */
+
+.rightSection {
+  width: 752px;
+  height: 100%;
+  background-color: white;
+  border-radius: 12px;
+  padding: 5.8rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 980px) {
+  .leftSection {
+    width: 100%;
+  }
+
+  .rightSection {
+    width: 100%;
+    padding: 5.8rem 3rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  #leftOneText {
+    font-size: 25px;
+  }
+
+  .createLogin {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .mn {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+  }
+
+  .rightSection {
+    width: 100%;
+    padding: 3rem 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .leftSection {
+    height: 100%;
+    gap: 4rem;
+  }
+
+  .leftsecOne {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .leftsecTwo {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .rightSection {
+    background-color: initial;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .form {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem 1rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .form {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 3rem 1rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  #leftOneText {
+    font-size: 20px;
+  }
+
+  #leftTwoText {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
