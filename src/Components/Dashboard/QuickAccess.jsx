@@ -13,7 +13,7 @@ const QuickAccess = ({ icon, text, className, onClick }) => {
           shadow-[0_0_10px_#c2c1c1]
           max-[600px]:w-[172px] 
           min-[660px]:w-[172px] 
-          max-[380px]:w-full ${className}`}
+          max-[390px]:w-full ${className}`}
         onClick={onClick}
       >
         <div>{icon}</div>

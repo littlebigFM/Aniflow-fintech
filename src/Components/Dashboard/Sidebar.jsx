@@ -17,11 +17,13 @@ const Sidebar = () => {
   return (
     <div>
       <div
-        className={`${style.sidebar} bg-[#3745AF] w-[252px] h-[900px] py-6 px-4 
+        className={`${style.sidebar} bg-[#3745AF] w-[252px]  py-6 px-4 
         rounded-3xl 
         max-[800px]:w-[200px]
         max-[600px]:hidden
+        h-[900px] sticky top-5
         `}
+        // h-[900px]
       >
         <div className="border-b border-[#FFFFFF3D] pb-[32px]">
           <img src={image} alt="" />

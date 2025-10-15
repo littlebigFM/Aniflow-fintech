@@ -2,10 +2,9 @@ import React from "react";
 // import Modal from "../Modal/Modal";
 import logo from "../../assets/logo1.png";
 import { BsFileEarmarkCheck } from "react-icons/bs";
-import { FaChevronLeft, FaRegFile } from "react-icons/fa6";
+import { FaChevronLeft, FaImage, FaRegFile } from "react-icons/fa6";
 import { MdOutlineFileDownload } from "react-icons/md";
-import { CiFileOn } from "react-icons/ci";
-import { GoImage } from "react-icons/go";
+import { CiFileOn, CiImageOn } from "react-icons/ci";
 
 const Receipt = ({ onClickTwo }) => {
   return (
@@ -38,7 +37,6 @@ const Receipt = ({ onClickTwo }) => {
                border-b
               border-[#808080]
               pb-4 
-              
               "
         >
           <div
@@ -101,7 +99,12 @@ const Receipt = ({ onClickTwo }) => {
         </div>
       </div>
       {/* ========================== */}
-      <div className="flex gap-4 mt-14">
+      <div
+        className="flex gap-4 mt-14
+        max-[350px]:flex-col
+        max-[350px]:gap-2
+      "
+      >
         <div
           className="w-full 
             flex gap-2 
@@ -115,6 +118,10 @@ const Receipt = ({ onClickTwo }) => {
             rounded-[12px]
             py-4
             cursor-pointer
+            font-medium
+            text-[14px]
+            min-[400px]:text-[16px]
+            min-[400px]:font-semibold
             "
         >
           <div className="text-[20px]">
@@ -135,10 +142,14 @@ const Receipt = ({ onClickTwo }) => {
             font-semibold
             py-4
             cursor-pointer
+            font-medium
+            text-[14px]
+            min-[400px]:text-[16px]
+            min-[400px]:font-semibold
             "
         >
           <div className="text-[20px]">
-            <GoImage />
+            <CiImageOn />
           </div>
           <p>Share as image</p>
         </div>

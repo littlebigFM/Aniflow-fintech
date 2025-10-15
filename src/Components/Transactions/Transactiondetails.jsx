@@ -7,7 +7,7 @@ import { IoShareSocialOutline } from "react-icons/io5";
 import Receipt from "./Receipt";
 
 const Transactiondetails = ({ onClick }) => {
-  const [modal, setModal] = useState(true);
+  const [modal, setModal] = useState(false);
   const [receiptModal, setReceiptModal] = useState(false);
   const [activeView, setActiveView] = useState("default");
 
@@ -112,7 +112,12 @@ const Transactiondetails = ({ onClick }) => {
                 </div>
                 <p className="text-[12px]">Transfer Again</p>
               </div>
-              <div className="flex gap-4 mt-2">
+              <div
+                className="flex gap-4 mt-2 
+              max-[350px]:flex-col
+              max-[350px]:gap-2
+              "
+              >
                 <div
                   className="w-full 
             flex gap-2 
@@ -120,12 +125,18 @@ const Transactiondetails = ({ onClick }) => {
             justify-center 
             cursor-pointer 
             text-[#3745AF]
-            font-semibold
+           
             border
             border-[#3745AF]
             rounded-[12px]
             py-4
             cursor-pointer
+
+            font-medium
+            text-[14px]
+            min-[400px]:text-[16px]
+            min-[400px]:font-semibold
+          
             "
                 >
                   <p>Download</p>
@@ -142,13 +153,17 @@ const Transactiondetails = ({ onClick }) => {
             bg-[#3745AF]
             rounded-[12px]
             text-[white]
-            font-semibold
             py-4
             cursor-pointer
+            font-medium
+            text-[14px]
+            min-[400px]:text-[16px]
+            min-[400px]:font-semibold
+            
             "
                   onClick={() => setActiveView("receipt")}
                 >
-                  <p>Share Receipt</p>
+                  <p className="">Share Receipt</p>
                   <div className="text-[20px]">
                     <IoShareSocialOutline />
                   </div>

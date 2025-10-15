@@ -17,20 +17,23 @@ const Dashboard = () => {
   return (
     <div
       className={`${style.DashTrans} 
-      p-8 
+      
+      px-8
+      
+
       flex 
       gap-[32px] 
       max-[800px]:gap-[16px]
       max-[800px]:px-4
       `}
     >
-      <div>
+      <div className=" h-[900px] sticky mt-6 top-6 min-[1100px]:mt-6">
         {" "}
         <Sidebar />
       </div>
 
       {activeView === "default" && (
-        <div className="w-full">
+        <div className="w-full py-6">
           <div className="w-full">
             {" "}
             <Navbar text="Dashboard" />
@@ -108,7 +111,7 @@ const Dashboard = () => {
       )}
 
       {activeView === "add" && (
-        <div className="w-full">
+        <div className="w-full py-6">
           <div>
             <button
               onClick={() => setActiveView("default")}
@@ -125,7 +128,7 @@ const Dashboard = () => {
       )}
 
       {activeView === "send" && (
-        <div className="w-full">
+        <div className="w-full py-6">
           <div>
             <button
               onClick={() => setActiveView("default")}
