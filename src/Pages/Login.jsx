@@ -186,7 +186,7 @@ const Register = () => {
                   required
                 />
                 {errors.password && (
-                  <p className="text-red-500 text-sm ">{errors.password}</p>
+                  <p className="text-red-500 text-sm">{errors.password}</p>
                 )}
               </div>
 
