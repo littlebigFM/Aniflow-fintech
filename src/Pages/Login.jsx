@@ -50,44 +50,106 @@ const Register = () => {
 
   return (
     <>
-      <div className={style.main}>
-        <div className={style.mn}>
-          <div className={style.leftSection}>
-            <div className={style.leftsecOne}>
+      <div
+        className={`
+      p-2 flex 
+      items-center 
+      justify-center 
+      ${style.main}
+      max-[665px]:p-[0]
+
+        `}
+      >
+        <div
+          className="
+        flex 
+        gap-4 
+        max-[665px]:flex-col 
+        max-[665px]:gap-[3rem]
+        max-[665px]:w-full
+        "
+        >
+          <div
+            className="
+          flex 
+          flex-col 
+          h-[787px] 
+          max-[980px]:w-full 
+          max-[400px]:h-full
+          max-[400px]:gap-[4rem]
+          max-[665px]:hidden
+          "
+          >
+            <div
+              className="
+            flex 
+            flex-col 
+            justify-between 
+            h-[40%] 
+            max-[400px]:flex 
+            gap-[4rem]
+            "
+            >
               <div>
                 <img src={logo1} alt="" />
               </div>
-              <div id={style.leftOneText}>
+              <div
+                className="
+              text-[28px] 
+              font-semibold 
+              max-[870px]:text-[25px] 
+              max-[260px]:text-[20px]
+              "
+              >
                 <p>Finance, Simplified!</p> <p>One click to go all digital.</p>
               </div>
             </div>
 
-            <div className={style.leftsecTwo}>
+            <div
+              className="
+            flex 
+            flex-col 
+            justify-space-between 
+            h-[60%] 
+            max-[400px]:flex 
+            gap-[4rem]
+            "
+            >
               <div>
                 <img src={logo2} alt="" />
               </div>
               <p id={style.leftTwoText}>Get Started</p>
             </div>
           </div>
+
+          <div className="min-[666px]:hidden">
+            <p className="font-bold text-[40px] text-center">Login</p>
+          </div>
+
           <form
             onSubmit={handleSubmit}
             className="bg-[white]
           w-[752px]
+          h-[850px]
           rounded-[12px]
           py-[5.8rem]
           px-[3rem]
           flex
           flex-col
           gap-4
-          max-[980px]:w-full
-          max-[665px]:p-[3rem]
           max-[400px]:p-[0rem]
-          
+          max-[665px]:h-[670px]
+          max-[665px]:mt-
+          max-[665px]:p-[3rem]
+          max-[665px]:pt-[4rem]
+          max-[950px]:w-full
           "
           >
-            <p className="font-bold text-[40px] text-center">Login</p>
+            <p className="max-[665px]:hidden font-bold text-[40px] text-center">
+              Login
+            </p>
 
-            <div className={style.formdata}>
+            <div className="">
               <div className={style.form}>
                 <input
                   type="text"
