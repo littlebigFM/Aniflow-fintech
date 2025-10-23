@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import style from "../../CSS/main.module.css";
 import axios from "axios";
 
-const BalanceCard = () => {
+const BalanceCard = ({ className }) => {
   const url = import.meta.env.VITE_API_URL;
   const token = import.meta.env.VITE_BEARER_TOKEN;
 
@@ -27,7 +27,7 @@ const BalanceCard = () => {
 
   return (
     <div
-      className={`${style.card} 
+      className={`
     h-[192px] 
     bg-gradient-to-l 
     from-[#3745AF] 
@@ -36,14 +36,13 @@ const BalanceCard = () => {
     p-4
     flex flex-col 
     justify-between
-    mt-4
     w-full
-     min-[420px]:w-[350px]
-    min-[675px]:w-[424px]
-   min-[600px]:mt-8
-
-    
+ 
+    ${className}
     `}
+
+      // min-[420px]:w-[350px]
+      // min-[675px]:w-[424px]
     >
       <div className="text-white">
         <p>Available Balance</p>
