@@ -38,7 +38,7 @@ const AddMoney = () => {
   };
 
   return (
-    <div className="flex flex-col gap-8 ">
+    <div className="flex flex-col gap-8">
       <div className="flex flex-col gap-1 min-[1000px]:hidden">
         <h2 className="text-2xl font-semibold">Add Money</h2>
         <p className="text-[gray]">Top up your wallet balance</p>
@@ -93,7 +93,7 @@ const AddMoney = () => {
       </div>
       <div>
         <div className="w-full relative">
-          <span
+          {/* <span
             className="absolute left-[11px] top-1/2
         -translate-y-1/2
          font-semibold
@@ -101,7 +101,7 @@ const AddMoney = () => {
          "
           >
             #
-          </span>
+          </span> */}
           <input
             type="text"
             className="bg-[#F9FAFB] w-full pl-5 h-[52px] rounded-[12px] border outline-none text-[17px]"

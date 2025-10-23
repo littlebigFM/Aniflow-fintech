@@ -37,7 +37,7 @@ const Beneficiaries = () => {
 
       <div className="mt-4 flex flex-col gap-4">
         {Beneficiaries.map((beneficial) => (
-          <div className="flex justify-between" id={beneficial.id}>
+          <div className="flex justify-between" key={beneficial.id}>
             <div>
               <p>{beneficial.name}</p>
               <p className="font-light text-[9px] text-[#8E9196]">

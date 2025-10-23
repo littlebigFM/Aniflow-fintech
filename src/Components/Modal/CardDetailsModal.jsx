@@ -75,7 +75,7 @@ const CardDetailsModal = ({ icon, onClick }) => {
         </form>
         <div>
           <Button
-            text="Submit"
+            text="Continue"
             className="text-[white] font-semibold w-full mt-6"
           />
         </div>

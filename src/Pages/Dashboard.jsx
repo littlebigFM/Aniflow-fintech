@@ -19,8 +19,6 @@ const Dashboard = () => {
       className={`${style.DashTrans} 
       
       px-8
-      
-
       flex 
       gap-[32px] 
       max-[800px]:gap-[16px]
@@ -45,34 +43,53 @@ const Dashboard = () => {
             </p>
           </div>
 
+          {/* ====================================== */}
           <div className="min-[1100px]:flex gap-6">
-            <div>
-              <div>
-                <BalanceCard />
+            <div
+              className="
+            mt-4
+            max-[1100px]:flex
+            max-[1100px]:gap-4
+            max-[1100px]:items-center
+            min-[600px]:mt-4
+            max-[850px]:flex-col
+            "
+            >
+              <div
+                className="w-full 
+              min-[1100px]:w-[424px]
+              "
+              >
+                <BalanceCard className="" />
               </div>
 
               <div
                 className="flex flex-col 
-              mt-4
             justify-between 
-            min-[430px]:h-[198px]
+            min-[430px]:h-[192px]
             min-[430px]:w-full
             min-[430px]:rounded-[16px]
             min-[430px]:bg-[white]
-            min-[430px]:p-8
+            min-[430px]:p-4
             min-[430px]:
-            min-[740px]:w-[424px]
+            min-[1100px]:mt-4
+            max-[1100px]:w-full
+            min-[1100px]:w-[424px]
+    
             "
+                // min-[740px]:w-[424px]
               >
                 <p className="hidden font-medium text-[18px] min-[430px]:flex ">
                   Quick Access
                 </p>
                 <div
                   className="flex 
+              gap-4
               w-full 
               justify-between
               max-[380px]:justify-normal
-              max-[310px]:flex-col
+              max-[360px]:flex-col
+              max-[360px]:gap-1
               "
                 >
                   <div className="w-full" onClick={() => setActiveView("add")}>
@@ -99,6 +116,7 @@ const Dashboard = () => {
                 <Beneficiaries />
               </div>
             </div>
+
             <div className="w-full">
               <Recentactivities />
             </div>
